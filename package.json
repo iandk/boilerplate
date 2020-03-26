@@ -10,7 +10,7 @@
     "copyAxios": "@powershell copy 'node_modules/axios/dist/axios.js' 'public/app/js/axios.js' || cp 'node_modules/axios/dist/axios.js' 'public/app/js/axios.js'",
     "copyFaStyle": "@powershell copy 'node_modules/@fortawesome/fontawesome-free/css/all.css' 'public/app/css/fontawesome.css' || cp 'node_modules/@fortawesome/fontawesome-free/css/all.css' 'public/app/css/fontawesome.css'",
     "copyFaFont": "@powershell copy 'node_modules/@fortawesome/fontawesome-free/webfonts/*' 'public/app/webfonts/' || cp node_modules/@fortawesome/fontawesome-free/webfonts/* public/app/webfonts/",
-    "serve": "live-server"
+    "serve": "live-server --open=public/"
   },
   "author": "",
   "license": "ISC",
