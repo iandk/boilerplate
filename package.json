@@ -6,6 +6,7 @@
   "scripts": {
     "build": "npm run buildTailwind && npm run copyVue && npm run copyAxios && npm run copyFaStyle && npm run copyFaFont",
     "buildTailwind": "npx tailwindcss build tailwind.css -o public/app/css/tailwind.css",
+    "copyTailwindUI": "@powershell copy 'node_modules/@tailwindcss/ui/dist/tailwind-ui.min.css' 'public/app/css/tailwind-ui.min.css' || cp 'node_modules/@tailwindcss/ui/dist/tailwind-ui.min.css' 'public/app/css/tailwind-ui.min.css'",
     "copyVue": "@powershell copy 'node_modules/vue/dist/vue.js' 'public/app/js/vue.js' || cp 'node_modules/vue/dist/vue.js' 'public/app/js/vue.js'",
     "copyAxios": "@powershell copy 'node_modules/axios/dist/axios.js' 'public/app/js/axios.js' || cp 'node_modules/axios/dist/axios.js' 'public/app/js/axios.js'",
     "copyFaStyle": "@powershell copy 'node_modules/@fortawesome/fontawesome-free/css/all.css' 'public/app/css/fontawesome.css' || cp 'node_modules/@fortawesome/fontawesome-free/css/all.css' 'public/app/css/fontawesome.css'",
