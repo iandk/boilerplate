@@ -11,7 +11,8 @@
     "copyAxios": "@powershell copy 'node_modules/axios/dist/axios.js' 'public/app/js/axios.js' || cp 'node_modules/axios/dist/axios.js' 'public/app/js/axios.js'",
     "copyFaStyle": "@powershell copy 'node_modules/@fortawesome/fontawesome-free/css/all.css' 'public/app/css/fontawesome.css' || cp 'node_modules/@fortawesome/fontawesome-free/css/all.css' 'public/app/css/fontawesome.css'",
     "copyFaFont": "@powershell copy 'node_modules/@fortawesome/fontawesome-free/webfonts/*' 'public/app/webfonts/' || cp node_modules/@fortawesome/fontawesome-free/webfonts/* public/app/webfonts/",
-    "serve": "live-server --open=public/"
+    "serve": "live-server --open=public/",
+    "update": "rm -rf node_modules public/app/css/tailwind-ui.min.css public/app/css/tailwind.css public/app/css/fontawesome.css public/app/js/axios.js public/app/webfonts/* public/app/js/vue.js && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
