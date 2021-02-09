@@ -20,7 +20,7 @@
     "@fortawesome/fontawesome-free": "^5.12.1",
     "axios": ">=0.21.1",
     "live-server": "^1.2.1",
-    "tailwindcss": "^1.2.0",
+    "tailwindcss": "^2.0.3",
     "vue": "^2.6.11"
   }
 }
